@@ -1,0 +1,107 @@
+.App {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  height: 100vh;
+  background-color: rgb(245, 244, 244);
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.TopSection {
+margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.resultSection{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container{
+  margin: 20px 0;
+  width: 400px;
+  background-color:#fff;
+  padding: 15px;
+  border-radius: 10px ;
+}
+.expensebox{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 140px;
+  height: 80px;
+  border-radius: 10px;
+padding: 5px 10px;
+border: 1px solid #ccc;
+}
+.expensebox span{
+  font-weight: bold;
+  color: red;
+}
+
+.btn{
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(20, 161, 107);
+  border: 1px solid rgb(20, 161, 107);
+  outline: none;
+  background-color: rgb(247, 247, 247);
+}
+.cancel{
+  color: rgb(187, 48, 82);
+  border: 1px solid  rgb(187, 48, 82);
+}
+form button{
+  display: block;
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(254, 255, 255);
+  border: 1px solid rgb(20, 161, 107);
+  outline: none;
+  background-color: rgb(20, 161, 107);
+  margin: 20px auto;
+}
+.inputValue {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px   20px 20px 5px;
+}
+.inputValue input{
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(20, 161, 107);
+  border-radius: 10px;
+}
+.transaction-item div {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 0  5px 15px 0 ;
+
+}
+.transaction-item .borderLeft{
+  border-right: 4px  solid rgb(255, 18, 57);
+}
+.transaction-item .borderRight{
+  border-right: 4px solid rgb(33, 177, 28);
+}
+.transaction-item div{
+  display: flex;
+  justify-content: space-between;
+
+}
+.searchBox{
+  display: block;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(201, 201, 201);
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  margin: 0px auto;
+  width: 80%;
+}

@@ -1,0 +1,42 @@
+ <div className={styles.buttonContainer}>
+           {
+            quantityCount(state,productData.id)===1 
+                && 
+                <button 
+                  className={styles.smallButton}
+                  onClick={()=>dispatch({type:"REMOVE-ITEM",payload:productData})}>
+                  <img src={Trash}/>
+                </button>
+           }
+              {
+                quantityCount(state,productData.id)>1 
+                && 
+                <button 
+                  className={styles.smallButton}
+                  onClick={()=>dispatch({type:"DECRIMENT",payload:productData})}>
+                     -
+                </button>
+              }
+               
+               {quantityCount(state,productData.id)>0 ? <span className={styles.counter}>{quantityCount(state,productData.id)}</span>:<span></span> }
+
+
+              {
+              isCart(state,productData.id)
+              ?
+              <button 
+              
+                className={styles.smallButton}
+                onClick={()=>dispatch({type:"INCRIMENT",payload:productData})}>
+                + 
+              </button>
+              :
+              <button 
+                 className={styles.addToCart}
+                 onClick={()=>dispatch({type:"ADD-ITEM",payload:productData})}>
+                 ADD TO CART
+              </button>
+              }
+              
+             
+      </div>
